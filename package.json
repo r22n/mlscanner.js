@@ -1,8 +1,35 @@
 {
+  "name": "mlscanner.js",
+  "version": "1.0.0",
+  "description": "read emial box(rfc5321) address from text",
+  "main": "dist/mlscanner.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r22n/mlscanner.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/r22n/mlscanner.js/issues"
+  },
+  "homepage": "https://github.com/r22n/mlscanner.js",
+  "keywords": [
+    "rfc5321",
+    "email",
+    "box",
+    "scanner",
+    "read",
+    "split",
+    "pick"
+  ],
+  "author": "= <r22n@github.com> (https://github.com/r22n)",
+  "license": "MIT",
   "scripts": {
-    "make": "tsc"
-  }, 
+    "make": "tsc && jest",
+    "test": "jest"
+  },
   "devDependencies": {
-    "@types/typescript": "^2.0.0"
+    "@types/jest": "^28.1.2",
+    "@types/typescript": "^2.0.0",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5"
   }
 }
