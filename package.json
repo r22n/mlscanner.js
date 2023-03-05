@@ -1,8 +1,8 @@
 {
   "name": "mlscanner.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "read emial box(rfc5321) address from text",
-  "main": "dist/mlscanner.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/r22n/mlscanner.js.git"
@@ -29,7 +29,6 @@
   "devDependencies": {
     "@types/jest": "^28.1.2",
     "@types/typescript": "^2.0.0",
-    "jest": "^28.1.1",
-    "ts-jest": "^28.0.5"
+    "jest": "^28.1.1"
   }
 }

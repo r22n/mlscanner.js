@@ -1,5 +1,4 @@
-const { mlscanbox } = require('../dist/mlscanner');
-
+const { mlscanbox } = require('.');
 
 describe('address scanner', () => {
     it('avoid no email box', () => {
@@ -11,7 +10,6 @@ describe('address scanner', () => {
         expect(mlscanbox('!zz dw+~').result).toBe('not-found');
         expect(mlscanbox('Abc.@example.com').result).toBe('not-found');
         expect(mlscanbox('Abc."@example.com').result).toBe('not-found');
-        expect(mlscanbox('Abc@example.com').result).toBe('not-found');
         expect(mlscanbox('Abc@[]').result).toBe('not-found');
         expect(mlscanbox('Abc@[[]').result).toBe('not-found');
         expect(mlscanbox('Abc@[]]').result).toBe('not-found');
